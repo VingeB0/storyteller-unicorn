@@ -676,6 +676,114 @@ body textarea:required:valid {
   margin-bottom: 65px;
 }
 
+.who-and-why {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.who-and-why .section-title:before {
+  content: '';
+  display: block;
+  margin: 0 auto 20px;
+  background-image: url(../img/sprite/sprite.png);
+  background-position: 0px 0px;
+  width: 39px;
+  height: 39px;
+}
+
+.advantages {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.advantages-item {
+  position: relative;
+  padding-top: 60px;
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  margin: 0 3% 40px;
+  text-align: left;
+}
+
+.advantages-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.advantages-title {
+  display: block;
+  font: 18px "SourceSansProBold", Arial, Tahoma, sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.featured .section-text__big {
+  margin-bottom: 100px;
+}
+
+.featured {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.featured-item {
+  min-height: 370px;
+  width: 100%;
+  max-width: 370px;
+  background-color: #222;
+  position: relative;
+  padding: 60px 40px 110px;
+  margin: 0 10px;
+}
+
+.featured-item__filter {
+  display: block;
+  text-align: left;
+  color: #eee;
+  margin-bottom: 35px;
+  font: 14px/33px "SourceSansProRegular", Arial, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+.featured-item__text {
+  text-align: left;
+  color: #eee;
+  font: 24px/33px "SourceSansProRegular", Arial, Tahoma, sans-serif;
+}
+
+.featured-item__bottom {
+  position: absolute;
+  bottom: 36px;
+  padding-top: 8px;
+  padding-left: 80px;
+  height: 68px;
+  color: #eee;
+}
+
+.featured-item__bottom span {
+  display: block;
+}
+
+.featured-item__name {
+  font: 14px "SourceSansProBold", Arial, Tahoma, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.featured-item__date {
+  font: 14px "SourceSansProBold", Arial, Tahoma, sans-serif;
+}
+
+.featured-item__photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .g-btn {
   display: inline-block;
   max-width: 270px;
@@ -692,6 +800,29 @@ body textarea:required:valid {
 .g-btn:hover {
   max-width: 220px;
   width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  display: block;
+  margin-bottom: 55px;
+  font: 27px "SourceSansProBold", Arial, Tahoma, sans-serif;
+}
+
+.section-text__big {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 970px;
+  font: 16px/33px "SourceSansProBold", Arial, Tahoma, sans-serif;
+}
+
+.section-text__small {
+  font: 16px/25px Arial, Tahoma, sans-serif;
+}
+
+.grey-bg {
+  background-color: #efefef;
 }
 
 body {

@@ -1,0 +1,18 @@
+@import url(../libs/slick/slick/slick.css);
+@import url(../libs/slick/slick/slick-theme.css);
+.slick-slide {
+  outline: none;
+}
+
+.slick-prev, .slick-next {
+  width: 14px;
+  height: 22px;
+}
+
+.slick-disabled {
+  opacity: 0;
+}
+
+.slick-slide {
+  min-height: 370px;
+}
