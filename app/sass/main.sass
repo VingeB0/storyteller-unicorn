@@ -8,6 +8,10 @@
 @import 'adjustment.sass'
 // Стили шапки
 @import 'modules/header.sass'
+// Стили секции главный баннер
+@import 'sections/top_banner.sass'
+// Стили общих элементов
+@import 'sections/common.sass'
 // Подключаем переменные
 @import 'vars.sass'
 
@@ -18,26 +22,14 @@ body
   position: relative
 
   overflow-x: hidden
-
+  color: $mainFont
   min-width: 320px
   text-size-adjust: none
   -webkit-font-smoothing: antialiased
 
-.img-responsive
-  display: block
-
-  max-width: 100%
-  height: auto
-
-.hide
-  display: none
-
-.show
-  display: block
-
 .container
-  width: 100%
-  max-width: 1180px
+  width: 98%
+  max-width: 1170px
   margin: 0 auto
 
 // Стили главной страницы

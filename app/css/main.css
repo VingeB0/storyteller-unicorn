@@ -407,52 +407,38 @@ textarea {
   /* 2 */
 }
 
+/* font-family: "SourceSansProRegular" */
 @font-face {
-  font-family: "RobotoBold";
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-family: "SourceSansProRegular";
+  src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot");
+  src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansProRegular/SourceSansProRegular.woff") format("woff"), url("../fonts/SourceSansProRegular/SourceSansProRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
+/* font-family: "SourceSansProLight" */
 @font-face {
-  font-family: "RobotoBold";
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-family: "SourceSansProLight";
+  src: url("../fonts/SourceSansProLight/SourceSansProLight.eot");
+  src: url("../fonts/SourceSansProLight/SourceSansProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansProLight/SourceSansProLight.woff") format("woff"), url("../fonts/SourceSansProLight/SourceSansProLight.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
+/* font-family: "SourceSansProBold" */
 @font-face {
-  font-family: "OpenSansBold";
-  src: url("../fonts/OpenSansBold/OpenSansBold.eot");
-  src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-family: "SourceSansProBold";
+  src: url("../fonts/SourceSansProBold/SourceSansProBold.eot");
+  src: url("../fonts/SourceSansProBold/SourceSansProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansProBold/SourceSansProBold.woff") format("woff"), url("../fonts/SourceSansProBold/SourceSansProBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
-@font-face {
-  font-family: "OpenSansLight";
-  src: url("../fonts/OpenSansLight/OpenSansLight.eot");
-  src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "OpenSansRegular";
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "OpenSansSemiBold";
-  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
-  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+.header-nav__list {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 /*Press footer*/
@@ -587,11 +573,133 @@ body textarea:required:valid {
 }
 
 /*Adjustment*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 98%;
+  max-width: 1170px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-top: 50px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.header-logo {
+  float: left;
+  font: 18px "SourceSansProBold", Arial, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+.header-nav {
+  float: right;
+}
+
+.header-nav__list li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.header-nav__list li:last-child {
+  margin-right: 0;
+}
+
+.header-nav__list li:after {
+  content: '';
+}
+
+.header-nav__list li:hover:after {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  display: block;
+}
+
+.header-nav__list a {
+  font: 16px "SourceSansProBold", Arial, Tahoma, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.top-bg {
+  background: url("../img/general/header_bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.top-bg .container {
+  position: relative;
+  min-height: 1000px;
+}
+
+.top-banner__text {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 100%;
+  max-width: 550px;
+  text-align: right;
+  z-index: 10;
+}
+
+.top-banner__title {
+  position: relative;
+  display: block;
+  font: 78px "SourceSansProBold", Arial, Tahoma, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 46px;
+}
+
+.top-banner__title:after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: -14px;
+  width: 140px;
+  height: 4px;
+  background-color: #232323;
+}
+
+.top-banner__desc {
+  font: 18px/34px "SourceSansProRegular", Arial, Tahoma, sans-serif;
+  color: #212121;
+  margin-bottom: 65px;
+}
+
+.g-btn {
+  display: inline-block;
+  max-width: 270px;
+  width: 100%;
+  height: 54px;
+  font: 18px/50px "SourceSansProBold", Arial, Tahoma, sans-serif;
+  color: #212121;
+  border: 2px solid #232323;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.g-btn:hover {
+  max-width: 220px;
+  width: 100%;
+}
+
 body {
   font-size: 16px;
   line-height: 1.75;
   position: relative;
   overflow-x: hidden;
+  color: "SourceSansProRegular";
   min-width: 320px;
   -webkit-text-size-adjust: none;
       -ms-text-size-adjust: none;
@@ -599,23 +707,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
 .container {
-  width: 100%;
-  max-width: 1180px;
+  width: 98%;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
