@@ -1,1 +1,1 @@
-@import url(app/libs/slick/slick/slick.css);@import url(app/libs/slick/slick/slick-theme.css);
+@import url(../libs/slick/slick/slick.css);@import url(../libs/slick/slick/slick-theme.css);.slick-slide{outline:none}.slick-next,.slick-prev{width:14px;height:22px;top:38%}.slick-next{right:-64px}.slick-prev{left:-64px}.slick-disabled{opacity:0}.slick-slide{min-height:370px}

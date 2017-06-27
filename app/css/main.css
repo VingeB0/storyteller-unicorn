@@ -634,6 +634,7 @@ body textarea:required:valid {
 .top-bg {
   background: url("../img/general/header_bg.jpg") center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .top-bg .container {
@@ -782,6 +783,23 @@ body textarea:required:valid {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.clients {
+  padding: 60px 0 100px;
+}
+
+.clients .container {
+  max-width: 920px;
+}
+
+.clients .section-title {
+  margin-bottom: 60px;
+}
+
+.clients-slider-item img {
+  display: block;
+  margin: 0 auto;
 }
 
 .g-btn {
