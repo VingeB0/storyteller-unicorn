@@ -1,0 +1,40 @@
+@import 'vars.sass'
+
+.top-bg
+	background: url('../img/general/header_bg.jpg') center no-repeat
+	background-size: cover
+	background-attachment: fixed
+	
+	.container
+		position: relative
+		min-height: 1000px
+
+.top-banner__text
+	position: absolute
+	right: 0
+	top: 40%
+	width: 100%
+	max-width: 550px
+	text-align: right
+	z-index: 10
+
+.top-banner__title
+	position: relative
+	display: block
+	font: 78px $boldFont, $font-family
+	text-transform: uppercase
+	margin-bottom: 46px
+	&:after
+		content: ''
+		position: absolute
+		display: block
+		right: 0
+		bottom: -14px
+		width: 140px
+		height: 4px
+		background-color: $borderColor
+
+.top-banner__desc
+	font: 18px/34px $mainFont, $font-family
+	color: #212121
+	margin-bottom: 65px
