@@ -1,0 +1,21 @@
+.quote
+	padding: 90px 0 60px
+	background-color: $mainColor
+	color: #fff
+	text-align: center
+
+.quote-text
+	width: 100%
+	max-width: 840px
+	font: 20px/38px $mainFont
+	margin: 0 auto 35px
+	&:before
+		content: ''
+		display: block
+		margin: 0 auto 20px
+		@include sprite($s-quote)
+
+.quote-author
+	font: 20px/38px $mainFont
+	font-style: italic
+

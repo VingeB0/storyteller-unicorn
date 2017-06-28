@@ -10,8 +10,13 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		autoplay: false,
 		dots: false,
+<<<<<<< HEAD
 		prevArrow:"<img class='a-left control-c prev slick-prev' src='img/general/arrow_left.png'>",
     nextArrow:"<img class='a-right control-c next slick-next' src='img/general/arrow_right.png'>"
+=======
+		prevArrow:"<img class='a-left control-c prev slick-prev' src='../img/general/arrow_left.png'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='../img/general/arrow_right.png'>"
+>>>>>>> 0338e1c4981288644a519d81978515a767cea59a
 	});
 
 	$('.clients-slider').slick({
@@ -20,6 +25,7 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		autoplay: false,
 		dots: false,
+<<<<<<< HEAD
 		prevArrow:"<img class='a-left control-c prev slick-prev' src='img/general/arrow_left.png'>",
     nextArrow:"<img class='a-right control-c next slick-next' src='img/general/arrow_right.png'>"
 	});
@@ -68,6 +74,11 @@ $(document).ready(function(){
         $(this).addClass('active').siblings().removeClass('active');
     }).filter('[data-filter="all"]').click();
 
+=======
+		prevArrow:"<img class='a-left control-c prev slick-prev' src='../img/general/arrow_left.png'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='../img/general/arrow_right.png'>"
+	});
+>>>>>>> 0338e1c4981288644a519d81978515a767cea59a
 });
 
 

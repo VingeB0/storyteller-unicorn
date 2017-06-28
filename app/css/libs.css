@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -684,6 +685,10 @@ textarea {
   color: black;
 }
 
+=======
+@import url(../libs/slick/slick/slick.css);
+@import url(../libs/slick/slick/slick-theme.css);
+>>>>>>> 0338e1c4981288644a519d81978515a767cea59a
 .slick-slide {
   outline: none;
 }
