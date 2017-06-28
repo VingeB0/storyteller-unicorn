@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 029f9c88154453ea043ed8ae4246dccdc4405fcd
 @charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -684,6 +688,13 @@ textarea {
   color: black;
 }
 
+<<<<<<< HEAD
+=======
+=======
+@import url(../libs/slick/slick/slick.css);
+@import url(../libs/slick/slick/slick-theme.css);
+>>>>>>> 0338e1c4981288644a519d81978515a767cea59a
+>>>>>>> 029f9c88154453ea043ed8ae4246dccdc4405fcd
 .slick-slide {
   outline: none;
 }
@@ -717,7 +728,10 @@ textarea {
 .clients .slick-prev {
   left: -26px;
 }
+<<<<<<< HEAD
 
 .clients .slick-prev, .clients .slick-next {
   top: 45%;
 }
+=======
+>>>>>>> 029f9c88154453ea043ed8ae4246dccdc4405fcd

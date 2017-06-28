@@ -68,7 +68,16 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 // Работа с JS
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
+<<<<<<< HEAD
         'app/libs/slick/slick.min.js' // slickslider
+=======
+<<<<<<< HEAD
+        'app/libs/slick/slick.min.js' // slickslider
+=======
+        'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
+        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
+>>>>>>> 0338e1c4981288644a519d81978515a767cea59a
+>>>>>>> 029f9c88154453ea043ed8ae4246dccdc4405fcd
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
@@ -157,7 +166,14 @@ gulp.task('build', ['clean', 'img', 'sass', 'coommon-scripts', 'scripts'], funct
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
         'app/css/main.css',
+<<<<<<< HEAD
         'app/css/libs.css',
+=======
+<<<<<<< HEAD
+        'app/css/libs.css',
+=======
+>>>>>>> 0338e1c4981288644a519d81978515a767cea59a
+>>>>>>> 029f9c88154453ea043ed8ae4246dccdc4405fcd
         'app/css/libs.min.css',
         'app/css/main.min.css'
         ])
