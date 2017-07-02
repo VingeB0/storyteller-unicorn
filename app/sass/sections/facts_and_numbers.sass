@@ -1,0 +1,55 @@
+.facts
+	position: relative
+	padding: 100px 0 130px
+	background: url('../img/general/facts.jpg') center no-repeat
+	background-size: cover
+	color: #fff
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 1
+		background-color: rgba(0,0,0,.5)
+		display: block
+	.container
+		z-index: 2
+
+.facts-item_wrap
+	position: relative
+	padding: 60px 50px 10px 50px
+	width: 100%
+	max-width: 830px
+	margin: 0 auto
+	background-color: rgba(255, 255, 255, .34)
+	text-align: center
+	&:after
+		position: absolute
+		bottom: -4px
+		left: 50%
+		margin-left: -37.5px
+		content: ''
+		display: block
+		height: 4px
+		width: 75px
+		background-color: $orangeColor
+
+.facts-item
+	@include inlineblock(top)
+	width: 40%
+	margin: 0 2% 40px
+
+.facts-number
+	font: 27px $boldFont
+	&:after
+		content: ''
+		display: block
+		height: 4px
+		width: 75px
+		margin: 20px auto 10px
+		background-color: $darkestGrayColor
+
+.facts-title
+	font-size: 24px

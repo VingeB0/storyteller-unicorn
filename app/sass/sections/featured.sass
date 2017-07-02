@@ -7,6 +7,8 @@
 	text-align: center
 
 .featured-item
+	position: relative
+	cursor: move
 	min-height: 370px
 	width: 100%
 	max-width: 370px
@@ -14,6 +16,34 @@
 	position: relative
 	padding: 60px 40px 110px
 	margin: 0 10px
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 50%
+		height: 6px
+		width: 0
+		background-color: #e64a19
+		transition: 0.2s
+	&:hover
+		&:after
+			transition: 0.4s
+			width: 60px
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		right: 50%
+		height: 6px
+		width: 0
+		background-color: #e64a19
+		transition: 0.2s
+	&:hover
+		&:before
+			transition: 0.4s
+			width: 60px
 
 .featured-item__filter
 	display: block

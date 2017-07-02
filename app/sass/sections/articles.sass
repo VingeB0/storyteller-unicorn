@@ -1,0 +1,57 @@
+.articles
+	padding: 110px 0 100px
+
+.articles-line
+	overflow: hidden
+	margin-bottom: 50px
+	&:last-child
+		margin-bottom: 0
+
+.article-item
+	float: left
+	width: 48.7%
+	text-align: center
+	span
+		display: block
+	&:first-child
+		margin-right: 2.5%
+
+.article-text
+	width: 95%
+	max-width: 420px
+	margin: 0 auto
+	padding-top: 80px
+
+.article-info
+	font-size: 14px
+	color: $lightGrayColor
+
+.article-title
+	font-size: 24px
+	line-height: 33px
+	margin-bottom: 36px
+
+.article-img
+	display: block
+	width: 100%
+	cursor: pointer
+
+.article-img-wrap
+	position: relative
+	&:after
+		cursor: pointer
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 100%;
+		bottom: 0;
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+		transition: 0.6s
+	&:hover
+		&:after
+			cursor: pointer
+			right: 0;
+			transition: 0.6s
